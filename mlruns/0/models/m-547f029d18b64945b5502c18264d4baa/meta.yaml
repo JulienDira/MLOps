@@ -1,0 +1,10 @@
+artifact_location: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/models/m-547f029d18b64945b5502c18264d4baa/artifacts
+creation_timestamp: 1750242023274
+experiment_id: '0'
+last_updated_timestamp: 1750242026865
+model_id: m-547f029d18b64945b5502c18264d4baa
+model_type: null
+name: random_forest_model
+source_run_id: 973094cb967d420dabce155f578ffc55
+status: 2
+status_message: null
