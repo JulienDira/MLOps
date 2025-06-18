@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/2956bb5a482445ac979d6295fd880280/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2956bb5a482445ac979d6295fd880280
+run_name: adventurous-hog-809
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750263000430
+status: 1
+tags: []
+user_id: root

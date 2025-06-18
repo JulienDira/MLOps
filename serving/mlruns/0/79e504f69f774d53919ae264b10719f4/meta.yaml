@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/79e504f69f774d53919ae264b10719f4/artifacts
+end_time: 1750261881716
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 79e504f69f774d53919ae264b10719f4
+run_name: tasteful-sheep-629
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750261872428
+status: 3
+tags: []
+user_id: root

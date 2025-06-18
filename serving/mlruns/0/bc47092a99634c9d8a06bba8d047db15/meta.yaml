@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/bc47092a99634c9d8a06bba8d047db15/artifacts
+end_time: 1750261995160
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bc47092a99634c9d8a06bba8d047db15
+run_name: salty-fish-622
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750261975389
+status: 3
+tags: []
+user_id: root

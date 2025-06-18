@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/b81ea674b1b54d73ad2fbc560822c1ac/artifacts
+end_time: 1750259991063
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b81ea674b1b54d73ad2fbc560822c1ac
+run_name: placid-goat-914
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750259990805
+status: 4
+tags: []
+user_id: root

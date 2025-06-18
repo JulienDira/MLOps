@@ -1,0 +1,15 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/f94f35f9c2ba4845b273f033be6a5406/artifacts
+deleted_time: 1750258356809
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: f94f35f9c2ba4845b273f033be6a5406
+run_name: efficient-pig-233
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 0
+status: 1
+tags: []
+user_id: ''

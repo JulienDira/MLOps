@@ -1,0 +1,15 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/973094cb967d420dabce155f578ffc55/artifacts
+deleted_time: 1750258356780
+end_time: 1750242026915
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 973094cb967d420dabce155f578ffc55
+run_name: RandomForestRegressor
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750242010097
+status: 3
+tags: []
+user_id: rakuzan

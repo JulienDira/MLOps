@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/f59cdd5f058c4a73865abb198196683b/artifacts
+end_time: 1750260682385
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f59cdd5f058c4a73865abb198196683b
+run_name: fun-dolphin-786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750260672422
+status: 3
+tags: []
+user_id: root

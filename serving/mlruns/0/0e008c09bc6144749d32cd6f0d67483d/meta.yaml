@@ -1,0 +1,15 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/0e008c09bc6144749d32cd6f0d67483d/artifacts
+deleted_time: 1750258356780
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 0e008c09bc6144749d32cd6f0d67483d
+run_name: useful-fawn-328
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 0
+status: 1
+tags: []
+user_id: ''

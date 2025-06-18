@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/397dc6a84c6f4db392a51a62e485e316/artifacts
+end_time: 1750262454826
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 397dc6a84c6f4db392a51a62e485e316
+run_name: amazing-grub-770
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750262435201
+status: 3
+tags: []
+user_id: root

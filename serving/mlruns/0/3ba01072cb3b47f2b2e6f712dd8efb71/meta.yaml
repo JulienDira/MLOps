@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/3ba01072cb3b47f2b2e6f712dd8efb71/artifacts
+end_time: 1750262063384
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3ba01072cb3b47f2b2e6f712dd8efb71
+run_name: adorable-kit-8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750262044381
+status: 3
+tags: []
+user_id: root

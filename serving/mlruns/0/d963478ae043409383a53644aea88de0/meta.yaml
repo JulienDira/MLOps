@@ -1,0 +1,15 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/d963478ae043409383a53644aea88de0/artifacts
+deleted_time: 1750258356808
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: d963478ae043409383a53644aea88de0
+run_name: awesome-mole-532
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 0
+status: 1
+tags: []
+user_id: ''

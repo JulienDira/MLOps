@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/699c005898824a62889a9e5b74ad6f21/artifacts
+end_time: 1750261993407
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 699c005898824a62889a9e5b74ad6f21
+run_name: burly-frog-129
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750261974047
+status: 3
+tags: []
+user_id: root

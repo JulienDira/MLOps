@@ -1,0 +1,15 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/98186b5fc34242b29da1e26e571df561/artifacts
+deleted_time: 1750258356808
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 98186b5fc34242b29da1e26e571df561
+run_name: valuable-worm-279
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 0
+status: 1
+tags: []
+user_id: ''

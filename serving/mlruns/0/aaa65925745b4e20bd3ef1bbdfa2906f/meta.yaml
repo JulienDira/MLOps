@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/aaa65925745b4e20bd3ef1bbdfa2906f/artifacts
+end_time: 1750262574504
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aaa65925745b4e20bd3ef1bbdfa2906f
+run_name: vaunted-hog-965
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750262554103
+status: 3
+tags: []
+user_id: root

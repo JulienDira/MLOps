@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # Service d'entraînement
+  mlflow-train:
+    build:
+      context: ./training
+      dockerfile: Dockerfile
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
+    ports: ["4000:4000"]
+    # volumes:
+    #   - ./models:/app/models
+    #   - ./mlruns:/mlruns
+    networks:
+      - mlflow-net
+
+  mlflow-model-serving:
+    build:
+      context: ./serving
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./serving/models:/models
+    environment:
+      - PORT=5001
+      - HOST=0.0.0.0
+    depends_on:
+      - mlflow-train
+    networks:
+      - mlflow-net
+    restart: unless-stopped
+
+  # Serveur MLflow optionnel (UI de monitoring)
+  mlflow-server:
+    image: ghcr.io/mlflow/mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./serving/mlruns:/mlruns
+      - ./serving/models:/models
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri /mlruns
+      --default-artifact-root /mlruns
+    networks:
+      - mlflow-net
+
+
+  streamlit-app:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
+      - MODEL_SERVING_URI=http://mlflow-model-serving:5001/invocations
+      - MODEL_TRAIN_URI=http://mlflow-train:4000/train
+      - MODEL_CHECK_URI=http://mlflow-train:4000/health
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - mlflow-server
+      - mlflow-model-serving
+      - mlflow-train
+    networks:
+      - mlflow-net
+
+
+networks:
+  mlflow-net:
+    driver: bridge

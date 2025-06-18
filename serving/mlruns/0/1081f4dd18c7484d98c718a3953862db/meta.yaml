@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rakuzan/projects/mlflow-init/mlflow-housing/mlruns/0/1081f4dd18c7484d98c718a3953862db/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1081f4dd18c7484d98c718a3953862db
+run_name: funny-shad-365
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750262999113
+status: 1
+tags: []
+user_id: root
