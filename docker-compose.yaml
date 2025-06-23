@@ -7,7 +7,7 @@ services:
       context: ./training
       dockerfile: Dockerfile
     environment:
-      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
+      - MLFLOW_TRACKING_URI=http://<MLFLOW_SERVER_IP>:5000
     ports: ["4000:4000"]
     # volumes:
     #   - ./models:/app/models
@@ -53,10 +53,10 @@ services:
     ports:
       - "8501:8501"
     environment:
-      - MLFLOW_TRACKING_URI=http://mlflow-server:5000
-      - MODEL_SERVING_URI=http://mlflow-model-serving:5001/invocations
-      - MODEL_TRAIN_URI=http://mlflow-train:4000/train
-      - MODEL_CHECK_URI=http://mlflow-train:4000/health
+      - MLFLOW_TRACKING_URI=http://${MLFLOW_SERVER_IP}:5000
+      - MODEL_SERVING_URI=http://${SERVING_IP}:5001/invocations
+      - MODEL_TRAIN_URI=http://${TRAINING_IP}:4000/train
+      - MODEL_CHECK_URI=http://${TRAINING_IP}:4000/health
     volumes:
       - ./data:/app/data
     depends_on:

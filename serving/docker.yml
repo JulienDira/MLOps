@@ -1,0 +1,65 @@
+---
+- name: Installer Docker sur Debian
+  hosts: training
+  become: yes
+  tasks:
+
+    - name: Mettre à jour les paquets
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+
+    - name: Installer les paquets nécessaires
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+        state: present
+
+    - name: Ajouter la clé GPG officielle de Docker
+      apt_key:
+        url: https://download.docker.com/linux/debian/gpg
+        state: present
+
+    - name: Ajouter le dépôt Docker
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/debian {{ ansible_distribution_release }} stable"
+        state: present
+        filename: docker
+
+    - name: Installer Docker
+      apt:
+        name:
+          - docker-ce
+          - docker-ce-cli
+          - containerd.io
+        state: present
+    
+    - name: Installer Docker Compose (v2)
+      get_url:
+        url: https://github.com/docker/compose/releases/download/v2.24.2/docker-compose-linux-x86_64
+        dest: /usr/local/bin/docker-compose
+        mode: '0755'
+
+    - name: Lancer Docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Ajouter l'utilisateur admin au groupe docker
+      become: true
+      user:
+        name: admin
+        groups: docker
+        append: yes
+
+
+    - name: Redémarrer la machine pour appliquer les droits Docker à l'utilisateur admin
+      reboot:
+        reboot_timeout: 300
+      become: true
+
